@@ -1,11 +1,13 @@
-import { Module } from '@nestjs/common';
-import { UserController } from './user.controller';
-import { UserService } from './user.service';
-import { HelloModule } from 'src/hello/hello.module';
+/* eslint-disable prettier/prettier */
+import { Module } from "@nestjs/common";
 
 @Module({
-  imports: [HelloModule],
-  controllers: [UserController],
-  providers: [UserService],
+    controllers: [],
+    providers: [],
+    imports: []
 })
-export class UserModule {}
+class UserModule{
+
+}
+
+export default UserModule;
